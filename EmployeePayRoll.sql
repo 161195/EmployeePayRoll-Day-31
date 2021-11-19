@@ -9,10 +9,12 @@ CREATE TABLE employee_payroll
 	salary float,
 	startDate date
 );
-
 -----UC3 inserting new employee into table----
 INSERT INTO employee_payroll
 VALUES ('UV', 12345.63, '2021-06-02'),('Dhoni', 45124.74, '2019-07-01'),('Smriti', 87459.63, '2020-08-12');	
 -----UC4 Retrieve data from table------
 select * from employee_payroll;
+-----UC5 Retrive Particulr Data--------	
+select * from employee_payroll where name='Dhoni';
+select * from employee_payroll where startDate between cast('2020-08-12' as date) and getdate();
  
