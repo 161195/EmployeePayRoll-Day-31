@@ -9,7 +9,10 @@ CREATE TABLE employee_payroll
 	salary float,
 	startDate date
 );
-select * from employee_payroll;
+
 -----UC3 inserting new employee into table----
 INSERT INTO employee_payroll
-VALUES ('UV', 12345.63, '2021-06-02'),('Dhoni', 45124.74, '2019-07-01'),('Smriti', 87459.63, '2020-08-12');	 
+VALUES ('UV', 12345.63, '2021-06-02'),('Dhoni', 45124.74, '2019-07-01'),('Smriti', 87459.63, '2020-08-12');	
+-----UC4 Retrieve data from table------
+select * from employee_payroll;
+ 
