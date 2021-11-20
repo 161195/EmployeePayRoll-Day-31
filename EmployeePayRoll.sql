@@ -37,5 +37,12 @@ select max(Salary) as MaximumSalary from Employee_Payroll ;
 select count(Id) as CountGender,Gender from Employee_Payroll group by Gender;
 select avg(Salary) as AverageSalary from Employee_Payroll ;
 
+------UC8 strore phone address department-----
+ALTER TABLE employee_payroll ADD Phone bigint;
+select * from employee_payroll;
+ALTER TABLE employee_payroll ADD Address varchar (250) null default 'Maharashtra';
+ALTER TABLE employee_payroll ADD Departmet  varchar (250) not null default 'HR';
+
+
 
  
